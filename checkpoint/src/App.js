@@ -3,25 +3,92 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import './App.css';
 import Card from 'react-bootstrap/Card';
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 function App() {
   return (
-    <Card>
-    <Card.Header>Quote</Card.Header>
-    <Card.Body>
-      <blockquote className="blockquote mb-0">
-        <p>
-          {' '}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-          posuere erat a ante.{' '}
-        </p>
-        <footer className="blockquote-footer">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </footer>
-      </blockquote>
-    </Card.Body>
-  </Card>
+    <div>
+       <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      <br></br>
+      <br></br>
+      <Form.Select size="lg">
+        <option>Large select</option>
+      </Form.Select>
+      <br />
+      <Form.Select>
+        <option>Default select</option>
+      </Form.Select>
+      <br />
+      <Form.Select size="sm">
+        <option>Small select</option>
+      </Form.Select>
+      <br></br>
+      <br></br>
+      <CardGroup>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title1</Card.Title>
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </Card.Text>
+        </Card.Body>
+       
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title2</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+       
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title3</Card.Title>
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </Card.Text>
+        </Card.Body>
+        
+      </Card>
+    </CardGroup>
+    <br></br>
+    <br></br>
+    <Card className="text-center">
+      <Card.Header>Featured</Card.Header>
+      <Card.Body>
+        <Card.Title>Special title treatment</Card.Title>
+        <Card.Text>
+          With supporting text below as a natural lead-in to additional content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+    </Card>
+    
+  </div>
   );
 }
 
