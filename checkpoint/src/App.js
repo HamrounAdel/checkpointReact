@@ -1,13 +1,12 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo.svg';
 import './App.css';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+
 import CardGroup from 'react-bootstrap/CardGroup';
 
 function App() {
@@ -33,14 +32,11 @@ function App() {
         <option>Default select</option>
       </Form.Select>
       <br />
-      <Form.Select size="sm">
-        <option>Small select</option>
-      </Form.Select>
-      <br></br>
-      <br></br>
+     
+      
       <CardGroup>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src="/bogota@2x.png" />
         <Card.Body>
           <Card.Title>Card title1</Card.Title>
           <Card.Text>
@@ -51,7 +47,7 @@ function App() {
        
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src="/bologna.png" />
         <Card.Body>
           <Card.Title>Card title2</Card.Title>
           <Card.Text>
@@ -59,10 +55,10 @@ function App() {
             additional content.{' '}
           </Card.Text>
         </Card.Body>
-       
+       <br/>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img  src="/curitiba.png" />
         <Card.Body>
           <Card.Title>Card title3</Card.Title>
           <Card.Text>
@@ -77,8 +73,6 @@ function App() {
     <br></br>
     <br></br>
     <Card className="text-center">
-      
-     
       <Card.Footer className="text-muted"> footer   </Card.Footer>
     </Card>
     
